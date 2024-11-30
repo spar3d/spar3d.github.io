@@ -40,19 +40,6 @@
   </script>
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 
-  <script>
-    window.onload = function() {
-      document.querySelectorAll('.load-model').forEach(button => {
-        button.addEventListener('click', function() {
-          const modelSrc = this.getAttribute('data-model-src');
-          const modelViewer = this.parentElement.querySelector('model-viewer');
-          modelViewer.setAttribute('src', modelSrc);
-          this.style.display = 'none'; // hides the button
-        });
-      });
-    }
-  </script>
-
 </head>
 <body>
 
@@ -170,7 +157,7 @@
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Fast single-view 3D reconstructor that combines the strengths of regression and generative approaches, allows for interactive user edits, and achieves state-of-the-art performance.
+        SPAR3D is a fast single-image 3D reconstructor with intermediate point cloud generation, which allows for interactive user edits and achieves state-of-the-art performance.
       </h2>
     </div>
   </div>
@@ -190,23 +177,6 @@
     </div>
     <!--/ Abstract. -->
 
-    <!-- <div class="columns is-centered has-text-centered"> -->
-
-      <!-- Visual Effects. -->
-      <!-- <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./assets/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div> -->
-
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -219,310 +189,10 @@
     </div>
     <!--/ Paper video. -->
 
-    <!-- arch. -->
-    <div class="container is-max-desktop">
-      <div class="hero-body has-text-centered">
-          <h2 class="title is-3">Architecture</h2>
-            <video id="arch" autoplay muted loop playsinline controls height="100%">
-              <source src="./assets/videos/architecture.mp4"
-                      type="video/mp4">
-            </video>
-      </div>
-    </div>
-    <!--/ arch. -->
-
     <!-- Tuple examples (image, video, mesh). -->
     <br><h2 class="title is-3 is-centered has-text-centered">Results</h2>
-    <div class="tuple-container">
-      <div class="tuple">
-        <div class="tuple-item">
-            <img src="./assets/examples/grandfather_doll.png" alt="Input 1">
-        </div>
-        <div class="tuple-item">
-            <img src="./assets/examples/grandfather_doll.gif" alt="Output 1">
-        </div>
-        <div class="tuple-item">
-            <model-viewer id="model1"
-                          shadow-intensity="1"
-                          environment-image="./assets/examples/snow_field_puresky_1k.hdr" 
-                          skybox-image="./assets/examples/snow_field_puresky_1k.hdr"
-                          orientation="0deg 0deg 180deg"
-                          min-field-of-view="40deg"
-                          max-field-of-view="100deg"
-                          style="background: linear-gradient(#f2f5fc, #f3fdfd); overflow-x: hidden;"
-                          camera-controls touch-action="pan-y">
-            </model-viewer>
-            <p class="tuple-text">Model</p>
-            <button class="load-model" data-model-src="./assets/examples/grandfather_doll.glb">3D</button>
-        </div>
-      </div>
-      
-      <div class="tuple">
-        <div class="tuple-item">
-            <img src="./assets/examples/2.png" alt="Image 1">
-            <p class="tuple-text">Image</p>
-        </div>
-        <div class="tuple-item">
-            <video src="./assets/examples/2.mp4"autoplay loop muted></video>
-            <p class="tuple-text">Video</p>
-        </div>
-        <div class="tuple-item">
-            <model-viewer id="model1"
-                          shadow-intensity="1"
-                          environment-image="./assets/examples/snow_field_puresky_1k.hdr" 
-                          skybox-image="./assets/examples/snow_field_puresky_1k.hdr"
-                          orientation="180deg 270deg 180deg"
-                          max-field-of-view="50deg"
-                          style="background: linear-gradient(#ccd3e0, #e4e0d1); overflow-x: hidden;"
-                          camera-controls touch-action="pan-y">
-            </model-viewer>
-            <p class="tuple-text">Model</p>
-            <button class="load-model" data-model-src="./assets/examples/2.glb">3D</button>
-        </div>
-      </div>
-
-      <div class="tuple">
-        <div class="tuple-item">
-            <img src="./assets/examples/3.png" alt="Image 1">
-            <p class="tuple-text">Image</p>
-        </div>
-        <div class="tuple-item">
-            <video src="./assets/examples/3.mp4"autoplay loop muted></video>
-            <p class="tuple-text">Video</p>
-        </div>
-        <div class="tuple-item">
-            <model-viewer id="model1"
-                          shadow-intensity="1"
-                          environment-image="./assets/examples/snow_field_puresky_1k.hdr" 
-                          skybox-image="./assets/examples/snow_field_puresky_1k.hdr"
-                          orientation="180deg 270deg 180deg"
-                          max-field-of-view="50deg"
-                          style="background: linear-gradient(#ccd3e0, #e4e0d1); overflow-x: hidden;"
-                          camera-controls touch-action="pan-y">
-            </model-viewer>
-            <p class="tuple-text">Model</p>
-            <button class="load-model" data-model-src="./assets/examples/3.glb">3D</button>
-        </div>
-      </div>
-
-      <div class="tuple">
-        <div class="tuple-item">
-            <img src="./assets/examples/4.png" alt="Image 1">
-            <p class="tuple-text">Image</p>
-        </div>
-        <div class="tuple-item">
-            <video src="./assets/examples/4.mp4"autoplay loop muted></video>
-            <p class="tuple-text">Video</p>
-        </div>
-        <div class="tuple-item">
-            <model-viewer id="model1"
-                          shadow-intensity="1"
-                          environment-image="./assets/examples/snow_field_puresky_1k.hdr" 
-                          skybox-image="./assets/examples/snow_field_puresky_1k.hdr"
-                          orientation="180deg 270deg 180deg"
-                          max-field-of-view="50deg"
-                          style="background: linear-gradient(#ccd3e0, #e4e0d1); overflow-x: hidden;"
-                          camera-controls touch-action="pan-y">
-            </model-viewer>
-            <p class="tuple-text">Model</p>
-            <button class="load-model" data-model-src="./assets/examples/4.glb">3D</button>
-        </div>
-      </div>
-      
-      <div class="tuple">
-        <div class="tuple-item">
-            <img src="./assets/examples/5.png" alt="Image 1">
-            <p class="tuple-text">Image</p>
-        </div>
-        <div class="tuple-item">
-            <video src="./assets/examples/5.mp4"autoplay loop muted></video>
-            <p class="tuple-text">Video</p>
-        </div>
-        <div class="tuple-item">
-            <model-viewer id="model1"
-                          shadow-intensity="1"
-                          environment-image="./assets/examples/snow_field_puresky_1k.hdr" 
-                          skybox-image="./assets/examples/snow_field_puresky_1k.hdr"
-                          orientation="180deg 270deg 180deg"
-                          max-field-of-view="50deg"
-                          style="background: linear-gradient(#ccd3e0, #e4e0d1); overflow-x: hidden;"
-                          camera-controls touch-action="pan-y">
-            </model-viewer>
-            <p class="tuple-text">Model</p>
-            <button class="load-model" data-model-src="./assets/examples/5.glb">3D</button>
-        </div>
-      </div>
-
-      <div class="tuple">
-        <div class="tuple-item">
-            <img src="./assets/examples/6.png" alt="Image 1">
-            <p class="tuple-text">Image</p>
-        </div>
-        <div class="tuple-item">
-            <video src="./assets/examples/6.mp4"autoplay loop muted></video>
-            <p class="tuple-text">Video</p>
-        </div>
-        <div class="tuple-item">
-            <model-viewer id="model1"
-                          shadow-intensity="1"
-                          environment-image="./assets/examples/snow_field_puresky_1k.hdr" 
-                          skybox-image="./assets/examples/snow_field_puresky_1k.hdr"
-                          orientation="180deg 270deg 180deg"
-                          max-field-of-view="50deg"
-                          style="background: linear-gradient(#ccd3e0, #e4e0d1); overflow-x: hidden;"
-                          camera-controls touch-action="pan-y">
-            </model-viewer>
-            <p class="tuple-text">Model</p>
-            <button class="load-model" data-model-src="./assets/examples/6.glb">3D</button>
-        </div>
-      </div>
-
-      <div class="tuple">
-        <div class="tuple-item">
-            <img src="./assets/examples/7.png" alt="Image 1">
-            <p class="tuple-text">Image</p>
-        </div>
-        <div class="tuple-item">
-            <video src="./assets/examples/7.mp4"autoplay loop muted></video>
-            <p class="tuple-text">Video</p>
-        </div>
-        <div class="tuple-item">
-            <model-viewer id="model1"
-                          shadow-intensity="1"
-                          environment-image="./assets/examples/snow_field_puresky_1k.hdr" 
-                          skybox-image="./assets/examples/snow_field_puresky_1k.hdr"
-                          orientation="180deg 270deg 180deg"
-                          max-field-of-view="50deg"
-                          style="background: linear-gradient(#ccd3e0, #e4e0d1); overflow-x: hidden;"
-                          camera-controls touch-action="pan-y">
-            </model-viewer>
-            <p class="tuple-text">Model</p>
-            <button class="load-model" data-model-src="./assets/examples/7.glb">3D</button>
-        </div>
-      </div>
-
-      <div class="tuple">
-        <div class="tuple-item">
-            <img src="./assets/examples/8.png" alt="Image 1">
-            <p class="tuple-text">Image</p>
-        </div>
-        <div class="tuple-item">
-            <video src="./assets/examples/8.mp4"autoplay loop muted></video>
-            <p class="tuple-text">Video</p>
-        </div>
-        <div class="tuple-item">
-            <model-viewer id="model1"
-                          shadow-intensity="1"
-                          environment-image="./assets/examples/snow_field_puresky_1k.hdr" 
-                          skybox-image="./assets/examples/snow_field_puresky_1k.hdr"
-                          orientation="180deg 270deg 180deg"
-                          max-field-of-view="50deg"
-                          style="background: linear-gradient(#ccd3e0, #e4e0d1); overflow-x: hidden;"
-                          camera-controls touch-action="pan-y">
-            </model-viewer>
-            <p class="tuple-text">Model</p>
-            <button class="load-model" data-model-src="./assets/examples/8.glb">3D</button>
-        </div>
-      </div>
-
-      <div class="tuple">
-        <div class="tuple-item">
-            <img src="./assets/examples/9.png" alt="Image 1">
-            <p class="tuple-text">Image</p>
-        </div>
-        <div class="tuple-item">
-            <video src="./assets/examples/9.mp4"autoplay loop muted></video>
-            <p class="tuple-text">Video</p>
-        </div>
-        <div class="tuple-item">
-            <model-viewer id="model1"
-                          shadow-intensity="1"
-                          environment-image="./assets/examples/snow_field_puresky_1k.hdr" 
-                          skybox-image="./assets/examples/snow_field_puresky_1k.hdr"
-                          orientation="180deg 270deg 180deg"
-                          max-field-of-view="50deg"
-                          style="background: linear-gradient(#ccd3e0, #e4e0d1); overflow-x: hidden;"
-                          camera-controls touch-action="pan-y">
-            </model-viewer>
-            <p class="tuple-text">Model</p>
-            <button class="load-model" data-model-src="./assets/examples/9.glb">3D</button>
-        </div>
-      </div>
-
-      <div class="tuple">
-        <div class="tuple-item">
-            <img src="./assets/examples/10.png" alt="Image 1">
-            <p class="tuple-text">Image</p>
-        </div>
-        <div class="tuple-item">
-            <video src="./assets/examples/10.mp4"autoplay loop muted></video>
-            <p class="tuple-text">Video</p>
-        </div>
-        <div class="tuple-item">
-            <model-viewer id="model1"
-                          shadow-intensity="1"
-                          environment-image="./assets/examples/snow_field_puresky_1k.hdr" 
-                          skybox-image="./assets/examples/snow_field_puresky_1k.hdr"
-                          orientation="180deg 270deg 180deg"
-                          max-field-of-view="50deg"
-                          style="background: linear-gradient(#ccd3e0, #e4e0d1); overflow-x: hidden;"
-                          camera-controls touch-action="pan-y">
-            </model-viewer>
-            <p class="tuple-text">Model</p>
-            <button class="load-model" data-model-src="./assets/examples/10.glb">3D</button>
-        </div>
-      </div>
-
-      <div class="tuple">
-        <div class="tuple-item">
-            <img src="./assets/examples/11.png" alt="Image 1">
-            <p class="tuple-text">Image</p>
-        </div>
-        <div class="tuple-item">
-            <video src="./assets/examples/11.mp4"autoplay loop muted></video>
-            <p class="tuple-text">Video</p>
-        </div>
-        <div class="tuple-item">
-            <model-viewer id="model1"
-                          shadow-intensity="1"
-                          environment-image="./assets/examples/snow_field_puresky_1k.hdr" 
-                          skybox-image="./assets/examples/snow_field_puresky_1k.hdr"
-                          orientation="180deg 270deg 180deg"
-                          max-field-of-view="50deg"
-                          style="background: linear-gradient(#ccd3e0, #e4e0d1); overflow-x: hidden;"
-                          camera-controls touch-action="pan-y">
-            </model-viewer>
-            <p class="tuple-text">Model</p>
-            <button class="load-model" data-model-src="./assets/examples/11.glb">3D</button>
-        </div>
-      </div>
-
-      <div class="tuple">
-        <div class="tuple-item">
-            <img src="./assets/examples/12.png" alt="Image 1">
-            <p class="tuple-text">Image</p>
-        </div>
-        <div class="tuple-item">
-            <video src="./assets/examples/12.mp4" autoplay loop muted></video>
-            <p class="tuple-text">Video</p>
-        </div>
-        <div class="tuple-item">
-            <model-viewer id="model1"
-                          shadow-intensity="1"
-                          environment-image="./assets/examples/snow_field_puresky_1k.hdr" 
-                          skybox-image="./assets/examples/snow_field_puresky_1k.hdr"
-                          orientation="180deg 270deg 180deg"
-                          max-field-of-view="50deg"
-                          style="background: linear-gradient(#ccd3e0, #e4e0d1); overflow-x: hidden;"
-                          camera-controls touch-action="pan-y">
-            </model-viewer>
-            <p class="tuple-text">Model</p>
-            <button class="load-model" data-model-src="./assets/examples/12.glb">3D</button>
-        </div>
-      </div>
-        
-
-    </div>
+    <div class="tuple-container"></div>
+    <div class="pagination-container" style="text-align: center; margin-top: 20px;"></div>
 
     <!-- <div class="column pb-6 is-one-third">
         <p>Toy Giraffe</p>
@@ -541,11 +211,10 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{huang2024zeroshape,
-  author    = {Huang, Zixuan and Stojanov, Stefan and Thai, Anh and Jampani, Varun and Rehg, James M},
-  title     = {ZeroShape: Regression-based Zero-shot Shape Reconstruction},
-  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages     = {10061--10071},
+    <pre><code>@article{huang2024spar3d,
+  author    = {Huang, Zixuan and Boss, Mark and Vasishta, Aaryaman and Rehg, James M and Jampani, Varun},
+  title     = {SPAR3D: Stable Point-Aware Reconstruction of 3D Objects from Single Images},
+  booktitle = {arXiv preprint arXiv:2403.02151},
   year      = {2024},
 }</code></pre>
   </div>
@@ -565,5 +234,6 @@
   </div>
 </footer>
 
+<script src="./assets/js/load_results.js"></script>
 </body>
 </html>

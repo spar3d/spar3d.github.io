@@ -1,0 +1,231 @@
+[
+    {
+      "name": "athlete",
+      "image": "./assets/examples/athlete.png",
+      "gif": "./assets/examples/athlete.gif",
+      "model": "./assets/examples/athlete.glb"
+    },
+    {
+      "name": "bell",
+      "image": "./assets/examples/bell.png",
+      "gif": "./assets/examples/bell.gif",
+      "model": "./assets/examples/bell.glb"
+    },
+    {
+      "name": "bird",
+      "image": "./assets/examples/bird.png",
+      "gif": "./assets/examples/bird.gif",
+      "model": "./assets/examples/bird.glb"
+    },
+    {
+      "name": "bird_rattle",
+      "image": "./assets/examples/bird_rattle.png",
+      "gif": "./assets/examples/bird_rattle.gif",
+      "model": "./assets/examples/bird_rattle.glb"
+    },
+    {
+      "name": "boy_doll",
+      "image": "./assets/examples/boy_doll.png",
+      "gif": "./assets/examples/boy_doll.gif",
+      "model": "./assets/examples/boy_doll.glb"
+    },
+    {
+      "name": "bunny_racer",
+      "image": "./assets/examples/bunny_racer.png",
+      "gif": "./assets/examples/bunny_racer.gif",
+      "model": "./assets/examples/bunny_racer.glb"
+    },
+    {
+      "name": "castle_cake",
+      "image": "./assets/examples/castle_cake.png",
+      "gif": "./assets/examples/castle_cake.gif",
+      "model": "./assets/examples/castle_cake.glb"
+    },
+    {
+      "name": "chest",
+      "image": "./assets/examples/chest.png",
+      "gif": "./assets/examples/chest.gif",
+      "model": "./assets/examples/chest.glb"
+    },
+    {
+      "name": "chicken_nesting",
+      "image": "./assets/examples/chicken_nesting.png",
+      "gif": "./assets/examples/chicken_nesting.gif",
+      "model": "./assets/examples/chicken_nesting.glb"
+    },
+    {
+      "name": "christmas_tree",
+      "image": "./assets/examples/christmas_tree.png",
+      "gif": "./assets/examples/christmas_tree.gif",
+      "model": "./assets/examples/christmas_tree.glb"
+    },
+    {
+      "name": "clock",
+      "image": "./assets/examples/clock.png",
+      "gif": "./assets/examples/clock.gif",
+      "model": "./assets/examples/clock.glb"
+    },
+    {
+      "name": "cutting_vegetable",
+      "image": "./assets/examples/cutting_vegetable.png",
+      "gif": "./assets/examples/cutting_vegetable.gif",
+      "model": "./assets/examples/cutting_vegetable.glb"
+    },
+    {
+      "name": "dinosaur",
+      "image": "./assets/examples/dinosaur.png",
+      "gif": "./assets/examples/dinosaur.gif",
+      "model": "./assets/examples/dinosaur.glb"
+    },
+    {
+      "name": "dog",
+      "image": "./assets/examples/dog.png",
+      "gif": "./assets/examples/dog.gif",
+      "model": "./assets/examples/dog.glb"
+    },
+    {
+      "name": "dragon",
+      "image": "./assets/examples/dragon.png",
+      "gif": "./assets/examples/dragon.gif",
+      "model": "./assets/examples/dragon.glb"
+    },
+    {
+      "name": "eagle_kettle",
+      "image": "./assets/examples/eagle_kettle.png",
+      "gif": "./assets/examples/eagle_kettle.gif",
+      "model": "./assets/examples/eagle_kettle.glb"
+    },
+    {
+      "name": "elephant",
+      "image": "./assets/examples/elephant.png",
+      "gif": "./assets/examples/elephant.gif",
+      "model": "./assets/examples/elephant.glb"
+    },
+    {
+      "name": "excavator",
+      "image": "./assets/examples/excavator.png",
+      "gif": "./assets/examples/excavator.gif",
+      "model": "./assets/examples/excavator.glb"
+    },
+    {
+      "name": "fire_car",
+      "image": "./assets/examples/fire_car.png",
+      "gif": "./assets/examples/fire_car.gif",
+      "model": "./assets/examples/fire_car.glb"
+    },
+    {
+      "name": "fish",
+      "image": "./assets/examples/fish.png",
+      "gif": "./assets/examples/fish.gif",
+      "model": "./assets/examples/fish.glb"
+    },
+    {
+      "name": "grandfather_doll",
+      "image": "./assets/examples/grandfather_doll.png",
+      "gif": "./assets/examples/grandfather_doll.gif",
+      "model": "./assets/examples/grandfather_doll.glb"
+    },
+    {
+      "name": "hanger",
+      "image": "./assets/examples/hanger.png",
+      "gif": "./assets/examples/hanger.gif",
+      "model": "./assets/examples/hanger.glb"
+    },
+    {
+      "name": "horse",
+      "image": "./assets/examples/horse.png",
+      "gif": "./assets/examples/horse.gif",
+      "model": "./assets/examples/horse.glb"
+    },
+    {
+      "name": "horse2",
+      "image": "./assets/examples/horse2.png",
+      "gif": "./assets/examples/horse2.gif",
+      "model": "./assets/examples/horse2.glb"
+    },
+    {
+      "name": "horse_statue",
+      "image": "./assets/examples/horse_statue.png",
+      "gif": "./assets/examples/horse_statue.gif",
+      "model": "./assets/examples/horse_statue.glb"
+    },
+    {
+      "name": "house",
+      "image": "./assets/examples/house.png",
+      "gif": "./assets/examples/house.gif",
+      "model": "./assets/examples/house.glb"
+    },
+    {
+      "name": "house2",
+      "image": "./assets/examples/house2.png",
+      "gif": "./assets/examples/house2.gif",
+      "model": "./assets/examples/house2.glb"
+    },
+    {
+      "name": "kettle",
+      "image": "./assets/examples/kettle.png",
+      "gif": "./assets/examples/kettle.gif",
+      "model": "./assets/examples/kettle.glb"
+    },
+    {
+      "name": "lacing_sheep",
+      "image": "./assets/examples/lacing_sheep.png",
+      "gif": "./assets/examples/lacing_sheep.gif",
+      "model": "./assets/examples/lacing_sheep.glb"
+    },
+    {
+      "name": "ornament",
+      "image": "./assets/examples/ornament.png",
+      "gif": "./assets/examples/ornament.gif",
+      "model": "./assets/examples/ornament.glb"
+    },
+    {
+      "name": "penguin",
+      "image": "./assets/examples/penguin.png",
+      "gif": "./assets/examples/penguin.gif",
+      "model": "./assets/examples/penguin.glb"
+    },
+    {
+      "name": "pot",
+      "image": "./assets/examples/pot.png",
+      "gif": "./assets/examples/pot.gif",
+      "model": "./assets/examples/pot.glb"
+    },
+    {
+      "name": "rabbit_rattle",
+      "image": "./assets/examples/rabbit_rattle.png",
+      "gif": "./assets/examples/rabbit_rattle.gif",
+      "model": "./assets/examples/rabbit_rattle.glb"
+    },
+    {
+      "name": "shelf",
+      "image": "./assets/examples/shelf.png",
+      "gif": "./assets/examples/shelf.gif",
+      "model": "./assets/examples/shelf.glb"
+    },
+    {
+      "name": "stacking_cup",
+      "image": "./assets/examples/stacking_cup.png",
+      "gif": "./assets/examples/stacking_cup.gif",
+      "model": "./assets/examples/stacking_cup.glb"
+    },
+    {
+      "name": "turtle_can",
+      "image": "./assets/examples/turtle_can.png",
+      "gif": "./assets/examples/turtle_can.gif",
+      "model": "./assets/examples/turtle_can.glb"
+    },
+    {
+      "name": "vase_hole",
+      "image": "./assets/examples/vase_hole.png",
+      "gif": "./assets/examples/vase_hole.gif",
+      "model": "./assets/examples/vase_hole.glb"
+    },
+    {
+      "name": "worker_doll",
+      "image": "./assets/examples/worker_doll.png",
+      "gif": "./assets/examples/worker_doll.gif",
+      "model": "./assets/examples/worker_doll.glb"
+    }
+  ]
+  
